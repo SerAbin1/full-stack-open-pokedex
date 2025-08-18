@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    browser: false,
+    node: true,
     es6: false,
     "jest/globals": true,
   },
@@ -10,7 +10,7 @@ module.exports = {
       jsx: true,
     },
     ecmaVersion: 2018,
-    sourceType: "commonjs",
+    sourceType: "module",
   },
   plugins: ["react", "jest"],
   rules: {
