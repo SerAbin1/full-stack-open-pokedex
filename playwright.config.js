@@ -1,13 +1,13 @@
-const { defineConfig } = require('@playwright/test');
+const { defineConfig } = require("@playwright/test");
 
 module.exports = defineConfig({
-  testDir: './e2e-tests',
+  testDir: "./e2e-tests",
   webServer: {
-    command: 'npm run start',
-    url: 'http://localhost:8080',
+    command: "npm run start",
+    url: "http://localhost:8080",
     reuseExistingServer: !process.env.CI,
   },
   use: {
-    baseURL: 'http://localhost:8080',
+    baseURL: "http://localhost:8080",
   },
 });
