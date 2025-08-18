@@ -10,7 +10,7 @@ module.exports = {
       jsx: true,
     },
     ecmaVersion: 2018,
-    sourceType: "module",
+    sourceType: "commonjs",
   },
   plugins: ["react", "jest"],
   rules: {
@@ -22,7 +22,6 @@ module.exports = {
     "no-trailing-spaces": "error",
     "object-curly-spacing": ["error", "always"],
     "arrow-spacing": ["error", { before: true, after: true }],
-    "no-console": "error",
     "react/prop-types": 0,
   },
 }
